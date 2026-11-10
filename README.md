@@ -1,3 +1,5 @@
+<img src="figures/banner.svg" alt="ARC Raiders Loot Analysis: heatmap of total loot value by enemy and map" width="100%" />
+
 # ARC Raiders Loot Analysis
 
 ![tests](https://github.com/angel-valencia-c/arc-raiders-loot-analysis/actions/workflows/tests.yml/badge.svg)
@@ -86,5 +88,5 @@ pytest
 ## Data and credits
 
 - Dataset: [ARC Raiders Database](https://www.kaggle.com/datasets/ektarr/arc-raiders-database) by *ektarr* on Kaggle, built from the community ARDB API. The data is **not redistributed** in this repository; download it from Kaggle.
-- *ARC Raiders* and all game names belong to Embark Studios. This is an independent, non-commercial analysis project.
+- *ARC Raiders* and all game names belong to Embark Studios. This is an independent, non-commercial analysis project; the banner and charts are original work generated from the data.
 - Developed with AI coding assistants. I directed the analysis and validated every result against the data.

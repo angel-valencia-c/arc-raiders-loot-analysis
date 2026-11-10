@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="ARC Raiders Loot Analysis: heatmap of loot value by enemy and map">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0e14"/><stop offset="1" stop-color="#141925"/></linearGradient>
+<style>.t{font-family:"Segoe UI",Helvetica,Arial,sans-serif}.m{font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace}
+.cell{animation:in .6s ease backwards}@keyframes in{from{opacity:0}}</style></defs>
+<rect width="1200" height="380" rx="18" fill="url(#bg)"/>
+<rect x="48" y="58" width="6" height="64" rx="3" fill="#f97316"/>
+<text x="70" y="84" class="m" font-size="15" fill="#f97316" letter-spacing="3">EXPLORATORY DATA ANALYSIS</text>
+<text x="70" y="124" class="t" font-size="44" font-weight="700" fill="#f3f4f6">ARC Raiders</text>
+<text x="70" y="172" class="t" font-size="44" font-weight="700" fill="#f3f4f6">Loot Analysis</text>
+<text x="70" y="214" class="t" font-size="18" fill="#9ca3af">Which enemies drop the most valuable loot, and where?</text>
+<text x="70" y="252" class="m" font-size="14" fill="#d1d5db">nested JSON  →  SQLite (7 tables)  →  SQL + seaborn</text>
+<rect x="70" y="282" width="118" height="32" rx="16" fill="#1f2633" stroke="#2f3747"/>
+<text x="129.0" y="303" class="m" font-size="14" fill="#e5e7eb" text-anchor="middle">21 enemies</text>
+<rect x="198" y="282" width="109" height="32" rx="16" fill="#1f2633" stroke="#2f3747"/>
+<text x="252.5" y="303" class="m" font-size="14" fill="#e5e7eb" text-anchor="middle">500 items</text>
+<rect x="317" y="282" width="109" height="32" rx="16" fill="#1f2633" stroke="#2f3747"/>
+<text x="371.5" y="303" class="m" font-size="14" fill="#e5e7eb" text-anchor="middle">116 drops</text>
+<rect x="436" y="282" width="82" height="32" rx="16" fill="#1f2633" stroke="#2f3747"/>
+<text x="477.0" y="303" class="m" font-size="14" fill="#e5e7eb" text-anchor="middle">6 maps</text>
+<text x="734.0" y="50" class="t" font-size="12" fill="#9ca3af" text-anchor="middle">Blue Gate</text>
+<text x="806.0" y="50" class="t" font-size="12" fill="#9ca3af" text-anchor="middle">Buried</text>
+<text x="878.0" y="50" class="t" font-size="12" fill="#9ca3af" text-anchor="middle">Dam</text>
+<text x="950.0" y="50" class="t" font-size="12" fill="#9ca3af" text-anchor="middle">Riven</text>
+<text x="1022.0" y="50" class="t" font-size="12" fill="#9ca3af" text-anchor="middle">Stella M.</text>
+<text x="1094.0" y="50" class="t" font-size="12" fill="#9ca3af" text-anchor="middle">Spaceport</text>
+<text x="688" y="81.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Queen</text>
+<rect class="cell" style="animation-delay:0.00s" x="700" y="62" width="68" height="26" rx="4" fill="#fde68a"><title>Queen · Blue Gate: 27,340</title></rect>
+<text x="734.0" y="80.0" class="m" font-size="11" fill="#1a1006" text-anchor="middle" font-weight="700">27.3k</text>
+<rect class="cell" style="animation-delay:0.04s" x="772" y="62" width="68" height="26" rx="4" fill="#161b26"><title>Queen · Buried City: 0</title></rect>
+<rect class="cell" style="animation-delay:0.08s" x="844" y="62" width="68" height="26" rx="4" fill="#fde68a"><title>Queen · Dam Battlegrounds: 27,340</title></rect>
+<text x="878.0" y="80.0" class="m" font-size="11" fill="#1a1006" text-anchor="middle" font-weight="700">27.3k</text>
+<rect class="cell" style="animation-delay:0.12s" x="916" y="62" width="68" height="26" rx="4" fill="#161b26"><title>Queen · Riven Tides: 0</title></rect>
+<rect class="cell" style="animation-delay:0.16s" x="988" y="62" width="68" height="26" rx="4" fill="#161b26"><title>Queen · Stella Montis: 0</title></rect>
+<rect class="cell" style="animation-delay:0.20s" x="1060" y="62" width="68" height="26" rx="4" fill="#fde68a"><title>Queen · The Spaceport: 27,340</title></rect>
+<text x="1094.0" y="80.0" class="m" font-size="11" fill="#1a1006" text-anchor="middle" font-weight="700">27.3k</text>
+<text x="688" y="111.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Matriarch</text>
+<rect class="cell" style="animation-delay:0.04s" x="700" y="92" width="68" height="26" rx="4" fill="#fdba74"><title>Matriarch · Blue Gate: 23,340</title></rect>
+<rect class="cell" style="animation-delay:0.08s" x="772" y="92" width="68" height="26" rx="4" fill="#161b26"><title>Matriarch · Buried City: 0</title></rect>
+<rect class="cell" style="animation-delay:0.12s" x="844" y="92" width="68" height="26" rx="4" fill="#fdba74"><title>Matriarch · Dam Battlegrounds: 23,340</title></rect>
+<rect class="cell" style="animation-delay:0.16s" x="916" y="92" width="68" height="26" rx="4" fill="#161b26"><title>Matriarch · Riven Tides: 0</title></rect>
+<rect class="cell" style="animation-delay:0.20s" x="988" y="92" width="68" height="26" rx="4" fill="#161b26"><title>Matriarch · Stella Montis: 0</title></rect>
+<rect class="cell" style="animation-delay:0.24s" x="1060" y="92" width="68" height="26" rx="4" fill="#fdba74"><title>Matriarch · The Spaceport: 23,340</title></rect>
+<text x="688" y="141.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Vaporizer</text>
+<rect class="cell" style="animation-delay:0.08s" x="700" y="122" width="68" height="26" rx="4" fill="#c2410c"><title>Vaporizer · Blue Gate: 9,540</title></rect>
+<rect class="cell" style="animation-delay:0.12s" x="772" y="122" width="68" height="26" rx="4" fill="#c2410c"><title>Vaporizer · Buried City: 9,540</title></rect>
+<rect class="cell" style="animation-delay:0.16s" x="844" y="122" width="68" height="26" rx="4" fill="#c2410c"><title>Vaporizer · Dam Battlegrounds: 9,540</title></rect>
+<rect class="cell" style="animation-delay:0.20s" x="916" y="122" width="68" height="26" rx="4" fill="#c2410c"><title>Vaporizer · Riven Tides: 9,540</title></rect>
+<rect class="cell" style="animation-delay:0.24s" x="988" y="122" width="68" height="26" rx="4" fill="#161b26"><title>Vaporizer · Stella Montis: 0</title></rect>
+<rect class="cell" style="animation-delay:0.28s" x="1060" y="122" width="68" height="26" rx="4" fill="#c2410c"><title>Vaporizer · The Spaceport: 9,540</title></rect>
+<text x="688" y="171.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Bastion</text>
+<rect class="cell" style="animation-delay:0.12s" x="700" y="152" width="68" height="26" rx="4" fill="#c2410c"><title>Bastion · Blue Gate: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.16s" x="772" y="152" width="68" height="26" rx="4" fill="#c2410c"><title>Bastion · Buried City: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.20s" x="844" y="152" width="68" height="26" rx="4" fill="#c2410c"><title>Bastion · Dam Battlegrounds: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.24s" x="916" y="152" width="68" height="26" rx="4" fill="#c2410c"><title>Bastion · Riven Tides: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.28s" x="988" y="152" width="68" height="26" rx="4" fill="#c2410c"><title>Bastion · Stella Montis: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.32s" x="1060" y="152" width="68" height="26" rx="4" fill="#c2410c"><title>Bastion · The Spaceport: 9,480</title></rect>
+<text x="688" y="201.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Leaper</text>
+<rect class="cell" style="animation-delay:0.16s" x="700" y="182" width="68" height="26" rx="4" fill="#c2410c"><title>Leaper · Blue Gate: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.20s" x="772" y="182" width="68" height="26" rx="4" fill="#c2410c"><title>Leaper · Buried City: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.24s" x="844" y="182" width="68" height="26" rx="4" fill="#c2410c"><title>Leaper · Dam Battlegrounds: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.28s" x="916" y="182" width="68" height="26" rx="4" fill="#c2410c"><title>Leaper · Riven Tides: 9,480</title></rect>
+<rect class="cell" style="animation-delay:0.32s" x="988" y="182" width="68" height="26" rx="4" fill="#161b26"><title>Leaper · Stella Montis: 0</title></rect>
+<rect class="cell" style="animation-delay:0.36s" x="1060" y="182" width="68" height="26" rx="4" fill="#c2410c"><title>Leaper · The Spaceport: 9,480</title></rect>
+<text x="688" y="231.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Bombardier</text>
+<rect class="cell" style="animation-delay:0.20s" x="700" y="212" width="68" height="26" rx="4" fill="#c2410c"><title>Bombardier · Blue Gate: 8,790</title></rect>
+<rect class="cell" style="animation-delay:0.24s" x="772" y="212" width="68" height="26" rx="4" fill="#c2410c"><title>Bombardier · Buried City: 8,790</title></rect>
+<rect class="cell" style="animation-delay:0.28s" x="844" y="212" width="68" height="26" rx="4" fill="#c2410c"><title>Bombardier · Dam Battlegrounds: 8,790</title></rect>
+<rect class="cell" style="animation-delay:0.32s" x="916" y="212" width="68" height="26" rx="4" fill="#c2410c"><title>Bombardier · Riven Tides: 8,790</title></rect>
+<rect class="cell" style="animation-delay:0.36s" x="988" y="212" width="68" height="26" rx="4" fill="#161b26"><title>Bombardier · Stella Montis: 0</title></rect>
+<rect class="cell" style="animation-delay:0.40s" x="1060" y="212" width="68" height="26" rx="4" fill="#c2410c"><title>Bombardier · The Spaceport: 8,790</title></rect>
+<text x="688" y="261.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Rocketeer</text>
+<rect class="cell" style="animation-delay:0.24s" x="700" y="242" width="68" height="26" rx="4" fill="#c2410c"><title>Rocketeer · Blue Gate: 8,552</title></rect>
+<rect class="cell" style="animation-delay:0.28s" x="772" y="242" width="68" height="26" rx="4" fill="#c2410c"><title>Rocketeer · Buried City: 8,552</title></rect>
+<rect class="cell" style="animation-delay:0.32s" x="844" y="242" width="68" height="26" rx="4" fill="#c2410c"><title>Rocketeer · Dam Battlegrounds: 8,552</title></rect>
+<rect class="cell" style="animation-delay:0.36s" x="916" y="242" width="68" height="26" rx="4" fill="#c2410c"><title>Rocketeer · Riven Tides: 8,552</title></rect>
+<rect class="cell" style="animation-delay:0.40s" x="988" y="242" width="68" height="26" rx="4" fill="#161b26"><title>Rocketeer · Stella Montis: 0</title></rect>
+<rect class="cell" style="animation-delay:0.44s" x="1060" y="242" width="68" height="26" rx="4" fill="#c2410c"><title>Rocketeer · The Spaceport: 8,552</title></rect>
+<text x="688" y="291.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Comet</text>
+<rect class="cell" style="animation-delay:0.28s" x="700" y="272" width="68" height="26" rx="4" fill="#8f3415"><title>Comet · Blue Gate: 5,110</title></rect>
+<rect class="cell" style="animation-delay:0.32s" x="772" y="272" width="68" height="26" rx="4" fill="#8f3415"><title>Comet · Buried City: 5,110</title></rect>
+<rect class="cell" style="animation-delay:0.36s" x="844" y="272" width="68" height="26" rx="4" fill="#8f3415"><title>Comet · Dam Battlegrounds: 5,110</title></rect>
+<rect class="cell" style="animation-delay:0.40s" x="916" y="272" width="68" height="26" rx="4" fill="#8f3415"><title>Comet · Riven Tides: 5,110</title></rect>
+<rect class="cell" style="animation-delay:0.44s" x="988" y="272" width="68" height="26" rx="4" fill="#8f3415"><title>Comet · Stella Montis: 5,110</title></rect>
+<rect class="cell" style="animation-delay:0.48s" x="1060" y="272" width="68" height="26" rx="4" fill="#8f3415"><title>Comet · The Spaceport: 5,110</title></rect>
+<text x="688" y="321.0" class="t" font-size="13" fill="#d1d5db" text-anchor="end">Shredder</text>
+<rect class="cell" style="animation-delay:0.32s" x="700" y="302" width="68" height="26" rx="4" fill="#161b26"><title>Shredder · Blue Gate: 0</title></rect>
+<rect class="cell" style="animation-delay:0.36s" x="772" y="302" width="68" height="26" rx="4" fill="#8f3415"><title>Shredder · Buried City: 4,460</title></rect>
+<rect class="cell" style="animation-delay:0.40s" x="844" y="302" width="68" height="26" rx="4" fill="#161b26"><title>Shredder · Dam Battlegrounds: 0</title></rect>
+<rect class="cell" style="animation-delay:0.44s" x="916" y="302" width="68" height="26" rx="4" fill="#8f3415"><title>Shredder · Riven Tides: 4,460</title></rect>
+<rect class="cell" style="animation-delay:0.48s" x="988" y="302" width="68" height="26" rx="4" fill="#8f3415"><title>Shredder · Stella Montis: 4,460</title></rect>
+<rect class="cell" style="animation-delay:0.52s" x="1060" y="302" width="68" height="26" rx="4" fill="#8f3415"><title>Shredder · The Spaceport: 4,460</title></rect>
+<text x="700" y="354" class="t" font-size="12" fill="#6b7280">Total loot value per enemy and map · top 9 enemies</text>
+</svg>
