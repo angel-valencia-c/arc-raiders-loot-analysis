@@ -2,6 +2,8 @@
 
 # ARC Raiders Loot Analysis
 
+**English** · [Español](README.es.md)
+
 ![tests](https://github.com/angel-valencia-c/arc-raiders-loot-analysis/actions/workflows/tests.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=white)
@@ -25,7 +27,7 @@ The raw data is a public Kaggle dataset where relationships (drop tables, maps, 
 |---|---|
 | ![Top enemies](figures/top_enemies_by_loot_value.png) | ![Rarity by map](figures/rarity_by_map.png) |
 
-> Chart labels are in Spanish (original analysis language).
+> Chart labels and notebook comments are in Spanish, the language of the original analysis.
 
 ## Pipeline
 
